@@ -3,11 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Luis Navarro Ballen </title>
+    <meta name="description" content="This is an educational learning of WDD 131 class - Dynamic Web Fundamentals for Luis Navarro Ballen, and this page will be the instruction and default information.">
+    <meta name="author" content="Luis Navarro Ballen">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>WDD 131 - Luis</h1>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Luis Navarro Ballen</h1>
+        <nav class="navigation modern">
+            <a href="www.linkedin.com/in/luisenb" title="LinkedIn">LinkedIn</a>
+            <a href="https://byui.instructure.com/" title="I-Learn">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=eng&id=p26#p26" title="Scripture">Scripture</a>
+            <a href="#" title="Final Project">Final Project</a>
+        </nav>
     </header>
+    <main class = "container">
+        <!-- section #1 -->
+        <section class = "card">
+            <h2>About Me</h2>
+            <div class="aboutMe">
+                <p>My name is Luis. I was born in San Cristobal, Venezuela, but I was raised in Puerto Ordaz. I am currently working as Business System Analyst. I currently in school to learn Software Development.</p>
+                <figure>
+                    <img class="photo" src="images/profile-picture.jpeg" alt="profile picture of Luis" width="150px" height="150px">
+                </figure>
+            </div>
+            <div>
+                <h3>Puerto Ordaz, Venezuela</h3>
+            </div>
+            <div class="city">
+                <figure>
+                    <img src="images/Flag-Venezuela.webp" alt="Venezuela Flag" width="150px">
+                    <figcaption>Oficial Venezuela Flag</figcaption>
+                </figure>
+                <p>Venezuela is a country of significant natural beauty and resources, characterized by its diverse landscapes and rich cultural heritage. However, it faces substantial economic and political challenges. Puerto Ordaz, a key city within Venezuela, stands out for its industrial importance, modern urban planning, and natural attractions, making it a unique blend of economic vitality and environmental beauty.</p>
+            </div>
+            
+        </section>
+        <!-- section #2 -->
+        <section class = "card webDev">
+            <h2>Web Dev Resources</h2>
+            <div >
+                <ul>
+                    <li><a href="https://dev.to/"> Dev.to Community</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/w3css/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+    
+    <footer>
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Luis Navarro Ballen Utah United States.
+        </p>
+        <p id="lastModified">
+        </p>
+    </footer>
+    <!-- Content goes here -->
+    
 </body>
 </html>
