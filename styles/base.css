@@ -67,16 +67,19 @@ header {
   
 main {
     max-width: max-content;
-    margin: min(10vh, 40px);
-    grid-column: 1 / 4;
-    /* align-content: center; */
+    margin: min(50vh, 60px);
+    grid-column: 2 / 3; /* Center column */
+    display: flex;
+    justify-content: center;
 }
 
 /* main content */
 .container {
     display: grid;
-    grid-template-columns: clamp(200px, 50%, 600px) clamp(200px, 50%, 300px) auto;
+    grid-template-columns: clamp(200px, 50%, 600px) clamp(200px, 50%, 300px);
     gap: 2rem;
+    align-content: center;
+    
 }
 
 .card {
