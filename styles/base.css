@@ -157,6 +157,7 @@ p {
 
 .photo {
     border: 1px gray solid;
+    max-width: 100%;
 }
 
 /* section 2 setup */
