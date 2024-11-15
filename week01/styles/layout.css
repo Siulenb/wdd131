@@ -41,7 +41,7 @@
 
 body {
     display: grid;
-    height: auto;
+    height: 50vh;
     grid-template: auto 1fr auto / auto 1fr auto;
     margin: 0%;
 }
@@ -61,7 +61,7 @@ main {
 .container {
     display: grid;
     grid-template-columns: minmax(120px, 25%) auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1/3;
 }
 
 
