@@ -1,21 +1,3 @@
-/* css variable */
-:root {
-    --primary-color: #669BBC;
-    --secondary-color: #A8C686;
-    --accent1-color: #F3A712;
-    --accent2-color: #E4572E;
-    --font-family: "Hind", sans-serif;
-    --paragraph-font: "serif";
-    --light-font-weight: 300;
-    --regular-font-weight: 400;
-    --medium-font-weight: 500;
-    --semibold-font-weight: 600;
-    --bold-font-weight: 700;
-    --nav-bacground-color: #29335C;
-    --nav-link-color: #616d69;
-    --nav-hover-link-color: #E4572E;
-    --nav-hover-background-color: #669BBC;
-}
 
 /* General Reset */
 * {
@@ -26,7 +8,7 @@
   
 /* Body Styling */
 body {
-    font-family: var(--font-family);
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     color: #333;
 }
@@ -64,8 +46,8 @@ nav {
 .navigation {
 	display: flex;
 	flex-direction: column;
-	/* list-style: none;
-	background-color: #333; */
+	/* list-style: none; */
+	background-color: transparent;
 	color: #fff;
 }
 
