@@ -1,0 +1,139 @@
+/* css variable */
+:root {
+    --primary-color: #669BBC;
+    --secondary-color: #A8C686;
+    --accent1-color: #F3A712;
+    --accent2-color: #E4572E;
+    --font-family: "Hind", sans-serif;
+    --paragraph-font: "serif";
+    --light-font-weight: 300;
+    --regular-font-weight: 400;
+    --medium-font-weight: 500;
+    --semibold-font-weight: 600;
+    --bold-font-weight: 700;
+    --nav-bacground-color: #29335C;
+    --nav-link-color: #616d69;
+    --nav-hover-link-color: #E4572E;
+    --nav-hover-background-color: #669BBC;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Body Styling */
+body {
+    font-family: var(--font-family);
+    line-height: 1.5;
+    color: #333;
+}
+  
+/* Header Styling */
+header {
+    background: #003366;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+/* Navigation */
+nav {
+	max-width: 700px;
+	margin: 1rem auto;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	/* list-style: none;
+	background-color: #333; */
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+  
+/* Main Layout */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2{
+    text-align: center;
+}
+
+.temples-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+  
+figure {
+    text-align: center;
+}
+  
+img {
+    width: 100%;
+    height: 200px;
+}
+  
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+  
+footer span {
+    font-weight: bold;
+}
