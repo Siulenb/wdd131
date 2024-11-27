@@ -57,6 +57,8 @@ main{
     margin: 1rem;
 }
 
+
+
 section {
     padding: 1rem;
     border-radius: 5px;
@@ -77,6 +79,15 @@ ul {
     color: white;
 }
 
+.data-icon {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    gap: 5px;
+    max-height: 50px;
+}
 .weather-icon {
     display: flex;
     align-items: center; /* Center vertically */
@@ -92,6 +103,14 @@ footer{
 
 }
 
+.weather-icon h2::after {
+    content: url("images/weather-icon.svg"); /* Path to the weather icon */
+    display: inline-block;
+    margin-left: 5px; /* Adds spacing between the heading and the icon */
+    /* width: 50px; 
+    height: 50px; */
+    vertical-align: middle; /* Aligns the icon with the text */
+}
 
 
 /* Media Queries */
@@ -100,4 +119,22 @@ footer{
         grid-template-columns: 1fr; /* Stack sections vertically */
     }
 
+    .weather-icon h2::after {
+        content: ""; /* No text content, only for layout purposes */
+        display: inline-block;
+        background-image: url("../images/weather-icon.svg"); /* Ensure the path is correct */
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 24px; /* Adjust the size as needed */
+        height: 24px;
+        margin-left: 8px; /* Space between text and icon */
+        vertical-align: middle; /* Align icon with text */
+    
+    }
+
+    .weather-symbol {
+        display: none; /* Hide the span when SVG is applied */
+    }
+
 }
+
