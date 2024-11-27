@@ -1,0 +1,103 @@
+/* Basic styling -  Expand on this to match your design */
+
+:root {
+    --primary-color: #669BBC;
+    --secondary-color: #082567;
+    --accent1-color: #FFDE21;
+    --accent2-color: #d30000;
+    --font-family: "Hind", sans-serif;
+    --paragraph-font: "serif";
+    --light-font-weight: 300;
+    --regular-font-weight: 400;
+    --medium-font-weight: 500;
+    --semibold-font-weight: 600;
+    --bold-font-weight: 700;
+    --nav-bacground-color: #29335C;
+    --nav-link-color: #616d69;
+    --nav-hover-link-color: #ce5632;
+    --nav-hover-background-color: #669BBC;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+
+}
+
+header {
+    background-color: var(--accent1-color);
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.hero img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.content {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 20px;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 100%;
+    padding: 0%;
+    margin: 1rem;
+}
+
+section {
+    padding: 1rem;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: fit-content;
+    height: fit-content;
+}
+
+ul {
+    list-style-type: "★ "; 
+  
+}
+
+.data, .weather {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.weather-icon {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    gap: 5px;
+    max-height: 50px;
+}
+
+footer{
+    background-color: var(--accent2-color);
+
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr; /* Stack sections vertically */
+    }
+
+}

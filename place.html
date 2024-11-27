@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Place </title>
+    <meta name="description" content="Description">
+    <meta name="author" content="Luis Navarro Ballen">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <!-- Content goes here -->
+    <header>
+        <h1>Venezuela</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/kid-flag-venezuela-mobile.webp" media="(max-width: 500px)">
+                <source srcset="images/kid-flag-venezuela-600px.webp" media="(max-width: 750px)">
+                <source srcset="images/kid-flag-venezuela-desktop.webp" media="(max-width: 1000px)">
+                <img src="images/kid-flag-venezuela-square.webp" alt="Orem Utah Temple" width="1000" height="700">
+            </picture>
+        </div>
+        <div class="content">
+            <section class="data">
+                <div class="weather-icon">
+                    <h2>Data</h2>
+                    <span class="weather-symbol"><img src="images/data-icon.svg" alt="Data Icon" width="50" height="50"></span>
+                </div>
+                <ul>
+                    <li>Area: 916,445[17] km2 (353,841 sq mi)</li>
+                    <li>Population: 28.84 million (2023)</li>
+                    <li>Capital: Caracas</li>
+                    <li>Languages: Spanish</li>
+                    <li>Currency: Bolivares</li>
+                    <li>Time Zone: UTC-4</li>
+                    <li>Calling Code: +58</li>
+                    <li>Internet TLD: .ve</li>
+                </ul>
+            </section>
+            <section class="weather">
+                <div class="weather-icon">
+                    <h2>Weather</h2>
+                    <span class="weather-symbol"><img src="images/weather-icon.svg" alt="weather Icon" width="50" height="50"></span>
+                </div>
+                <ul>
+                    <li>Temperature: <span id="temperature">30</span> °C</li>
+                    <li>Conditions: <span id="conditions">Partly Cloudy</span></li>
+                    <li>Wind: <span id="wind">5</span> km/h</li>
+                    <li>Wind Chill: <span id="windchill">Calculating...</span> °C</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Luis Navarro Ballen Utah United States.
+        </p>
+        <p id="lastModified">
+        </p>
+    </footer>
+</body>
+</html>

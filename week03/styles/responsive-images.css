@@ -1,0 +1,21 @@
+
+/* Responsive scaling */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevent inline-block gap below the image */
+}
+
+/* Optional: Using object-fit for creative control */
+.hero img {
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    width: 100%;
+    height: 100%; /* Requires the container to have a defined height */
+}
+
+/* Alternative: Maintain intrinsic aspect ratio using aspect-ratio */
+.hero img {
+    aspect-ratio: 2 / 1; /* Same as 1500:750 */
+    width: 100%;
+    height: auto;
+}

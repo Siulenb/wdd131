@@ -3,9 +3,9 @@
 /* css variable */
 :root {
     --primary-color: #669BBC;
-    --secondary-color: #A8C686;
-    --accent1-color: #F3A712;
-    --accent2-color: #E4572E;
+    --secondary-color: #082567;
+    --accent1-color: #FFDE21;
+    --accent2-color: #d30000;
     --font-family: "Hind", sans-serif;
     --paragraph-font: "serif";
     --light-font-weight: 300;
@@ -15,7 +15,7 @@
     --bold-font-weight: 700;
     --nav-bacground-color: #29335C;
     --nav-link-color: #616d69;
-    --nav-hover-link-color: #E4572E;
+    --nav-hover-link-color: #ce5632;
     --nav-hover-background-color: #669BBC;
 }
 
@@ -204,7 +204,7 @@ footer p{
 }
   
 #lastModified{
-    color: var(--nav-bacground-color);
+    color: #eee;
     font-weight: var(--medium-font-weight);
     margin: 0;
     padding: 0;

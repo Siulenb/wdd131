@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Description">
+    <meta name="author" content="Author">
+    <link rel="stylesheet" href="/week03/styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <!-- Large image for screens 1000px and up -->
+                <source srcset="/week03/images/large-2-temple.webp" media="(min-width: 1000px)">
+                <!-- Medium image for screens 500px and up -->
+                <source srcset="/week03/images/medium-2-temple.webp" media="(min-width: 500px)">
+                <!-- Default small image -->
+                <img src="/week03/images/temple-small.webp" alt="Scenic view of a temple surrounded by nature" width="1500px" height="750px">
+            </picture>
+        </div>
+    </main>
+    <!-- Content goes here -->
+    <script src="script.js"></script>
+</body>
+</html>
