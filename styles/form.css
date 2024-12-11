@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+  
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+h1 {
+    text-align: center;
+    color: #5353e9;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+label, legend {
+    font-weight: bold;
+    margin-bottom: 1px;
+    
+}
+  
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+/* rating stars */
+.ratingstars {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+}
+
+/* hide the inputs */
+.ratingstars input {
+    display: none;
+}
+  
+/* set properties of all labels */
+.ratingstars > label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+}
+
+/* give label a hover state */
+.ratingstars label:hover {
+    color: #6969ff;
+    transition: 0.2s ease;
+}
+
+.ratingstars label:active::before {
+    transform:scale(1.1);
+}
+  
+/* set shape of unselected label */
+.ratingstars label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+}
+  
+/* set full star shape for checked label and those that come after it */
+.ratingstars input:checked ~ label:before {
+    content:'\2605';
+}
+
+.stars-text {
+    margin: 0;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    max-width: 565px;
+}
+  
+/* Date of installation */
+#installationDate {
+    width: 580px;
+    max-width: 600px;
+    margin: 0;
+}
+
+/* Useful features */
+
+.features label{
+    font-weight: lighter;
+
+}
+
+.features [type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 1px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-right: 1px;
+    border-right: 1px;
+    
+}
+
+
+/* Written Review  */
+
+textarea {
+    width: 580px;
+    height: 100px;
+    max-width: 600px;
+}
+
+/* user name */
+
+.user-name {
+    width: 580px;
+    max-width: 600px;
+    margin: 0;
+}
+  
+input[type="submit"] {
+    background-color: #5353e9;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+    background-color: #6a008f;
+}
+  
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+@-moz-document url-prefix() {
+    .ratingstars input:checked ~ label:before {
+    font-size: 36px;
+    line-height: 21px;
+    }
+}  
+  
