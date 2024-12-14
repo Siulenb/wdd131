@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Venezuela Beaches - Luis Navarro Ballen</title>
+    <meta name="description" content="Site informative home page about Venezuela beaches">
+    <meta name="author" content="Author">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Visit beautiful beaches</h1>
+            <p>Come visit us in Venezuela, there are varieties of beautiful beaches</p>
+            <button class="main-button">Contact Us</button>
+        </div>
+    </header>
+
+    <section class="activities">
+        <div class="activities-content">
+            <h2>Varieties of activities.</h2>
+            <p>Groups and partners offer a 
+                wide range of activities designed to showcase 
+                the natural beauty and charm of the beach and surrounding areas. 
+                From thrilling water sports like snorkeling, paddleboarding, 
+                and jet skiing to serene experiences such as yoga on the sand 
+                and guided meditation by the waves.These activities celebrate 
+                the unique environment of the island and beach, creating opportunities 
+                to connect with nature, unwind, and enjoy the vibrant coastal community.</p>
+        </div>
+        <div class="activities-list">
+            <ul>
+                <li><strong>Diving:</strong> Explore the third largest coral reef in the world, with more than 1780 species of fish.</li>
+                <li><strong>Kitesurfing:</strong> Take advantage of the trade winds that blow constantly in the archipelago's waters. </li>
+                <li><strong>Snorkeling:</strong> Explore coral reefs, swim with tropical fish and, with luck, find sea turtles. </li>
+                <li><strong>Water skiing:</strong> Practice this nautical sport in the archipelago. </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="popular-places">
+        <h2>Popular Places</h2>
+        <div class="box-place">
+            <div class="place">
+                <img src="images/miranda-beach.webp" alt="Playa Caracolito, Miranda" loading="lazy">
+                <p>Playa Caracolito</p>
+            </div>
+            <div class="place">
+                <img src="images/playa-el-agua-margarita.webp" alt="Playa El Agua, Margarita" loading="lazy">
+                <p>Playa El Agua</p>
+            </div>
+            <div class="place">
+                <img src="images/Cayo-Sombrero-Venezuela.webp" alt="Cayo Sombrero, Natioanl Park Morrocoy" loading="lazy">
+                <p>Cayo Sombrero</p>
+            </div>
+        </div>
+          <button class="main-button">Visit these places</button>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Don't miss amazing places that you can visit.</h2>
+            <p>Subscribe to our newsletter to keep you informed of our current places, weather, and new activities.</p>
+            <button class="newsletter-button">Subscribe Here</button>
+        </div>
+        <picture>
+            <!-- Large image for screens 1000px and up -->
+            <source srcset="images/los-roques-big.webp" media="(min-width: 1000px)">
+            <!-- Medium image for screens 500px and up -->
+            <source srcset="images/los-roques-600.webp" media="(min-width: 500px)">
+            <!-- Default small image -->
+            <img src="images/los-roques-big.webp" alt="Los roques North island" width="1500px" height="750px">
+        </picture>
+    </section>
+
+    <section class="reviews">
+        <h2>The most recent reviews</h2>
+        <div class="review-list">
+            <!-- <div class="review">
+                <blockquote>Amazing review.</blockquote>
+                <p>- Emilia, Excited</p>
+            </div>
+            <div class="review">
+                <blockquote>Fun trip</blockquote>
+                <p>- Ana, Adventurer</p>
+            </div>
+            <div class="review">
+                <blockquote>Coming back soon</blockquote>
+                <p>- Diego, Explorer</p>
+            </div> -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-image">
+            <h2>Social Media</h2>
+            <nav class="socialinks">
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook-logo.png" alt="Facebook Logo">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="images/twitter-logo.svg" alt="Twitter Logo">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram-logo.png" alt="Instagram Logo">
+                </a>
+            </nav>
+        </div>
+        
+        <div class="contact-info">
+            <p>Venezuela Beaches</p>
+            <ul>
+                <li><strong>Contact Us:</strong> info@venezuela.com</li>
+                <li><strong>Offices:</strong> Puerto Ordaz, Venezuela</li>
+            </ul>
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Luis Navarro Ballen Utah United States.
+            </p>
+        </div>
+    </footer>
+    <script src="scripts/review.js"></script>
+</body>
+</html>

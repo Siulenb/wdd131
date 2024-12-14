@@ -1,0 +1,381 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--background-color);
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/* css Variable */
+:root {
+    --primary-color: #008080;
+    --secondary-color: #0056b3;
+    --third-color: #343a40;
+    --background-color: #f2f6f8;
+    --accent1-color: white;
+    --accent2-color: #29335C;
+    --font-family: "Hind", sans-serif;
+    --paragraph-font: "serif";
+    --light-font-weight: 300;
+    --regular-font-weight: 400;
+    --medium-font-weight: 500;
+    --semibold-font-weight: 600;
+    --bold-font-weight: 700;
+    
+}
+
+/* Hero Section */
+.hero {
+    background: url('/project/images/cayo-de-agua.webp') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--accent1-color);
+    position: relative;
+    padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.hero p{
+    text-align: justify;
+    padding-bottom: 0.8rem;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--primary-color);
+    color: var(--accent1-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+button:hover {
+    background: var(--secondary-color);
+}
+
+/* Activities Section */
+.activities {
+    padding: 40px;
+    text-align: center;
+    background: var(--background-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.activities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.activities li {
+    margin: 10px 0;
+}
+
+.activities-content {
+    padding: 10px;
+    flex: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0;
+    max-width: 600px;
+    
+}
+
+.activities-content p{
+    text-align: justify;
+    padding-bottom: 0.8rem;
+    align-content: center;
+}
+
+/* Responsive Text Blocks */
+.text-block {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+}
+
+
+.activities-list{
+    padding: 20px;
+    background: var(--primary-color);
+    color: var(--accent1-color);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: fit-content;
+    text-align: justify;
+    align-content: center;
+}
+
+
+.activities-list ul {
+    display: block;
+    
+}
+
+/* Popular Places Section */
+.popular-places {
+    padding: 40px;
+    text-align: center;
+}
+
+.box-place {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+    background: var(--background-color);
+}
+
+.place img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.888);
+}
+
+/* Newsletter Section */
+.newsletter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+    background: var(--primary-color);
+    color: var(--accent1-color);
+    gap: 20px;
+}
+
+.newsletter p{
+   padding-bottom: 0.8rem;
+}
+
+/* .newsletter picture{
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 20px;
+} */
+
+/* Picture Styling */
+picture {
+    flex: 1 1 300px; /* Adjusts with screen size */
+    text-align: center;
+}
+
+picture img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 1500px; /* Prevent overscaling on large screens */
+    border-radius: 10px;
+}
+
+
+.newsletter-content {
+    flex: 1;
+    /* text-align: left; */
+}
+
+.newsletter-button {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    padding-top: 10px;
+}
+
+.newsletter-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+/* Reviews Section */
+.reviews {
+    background: var(--background-color);
+    padding: 40px;
+    text-align: center;
+}
+
+.review-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.review {
+    background: var(--background-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+
+
+/* Footer */
+.footer {
+    padding: 40px;
+    background: var(--third-color);
+    color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-rows: 1fr;
+}
+
+/* .footer-content,
+.contact-info {
+    width: 30%;
+} */
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer-image {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    align-content: center;
+    align-items: center;
+}
+
+/* Social Media */
+
+.socialinks {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.socialinks img {
+    width: 30px;
+    height: auto;
+}
+
+.socialinks a {
+    margin: 0 10px;
+
+}
+
+
+/* nav {
+    background-color: var(--nav-bacground-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--accent1-color);
+    text-decoration: underline;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+} */
+
+
+/* Activity flex Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 600px) {
+    .activities-content, .activities-list {
+      flex: 100%;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh; /* Adjust height for smaller screens */
+    }
+
+    .hero-content {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .activities-content {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .text-block {
+        padding: 10px;
+    }
+
+    .newsletter {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+
+    .newsletter-content, picture {
+        flex: 1 1 100%;
+        max-width: 100%; /* Allow full-width scaling */
+    }
+
+    picture img {
+        max-width: 100%; /* Ensure it scales properly */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 0.8em;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+
+    .newsletter h2 {
+        font-size: 1.5em;
+    }
+
+    .newsletter p {
+        font-size: 0.9em;
+    }
+}
