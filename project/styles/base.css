@@ -17,7 +17,7 @@ body {
 
 /* css Variable */
 :root {
-    --primary-color: #008080;
+    --primary-color: #006970;
     --secondary-color: #0056b3;
     --third-color: #343a40;
     --background-color: #f2f6f8;
@@ -30,7 +30,6 @@ body {
     --medium-font-weight: 500;
     --semibold-font-weight: 600;
     --bold-font-weight: 700;
-    
 }
 
 /* Hero Section */
@@ -57,7 +56,7 @@ body {
     border-radius: 10px;
 }
 
-button {
+.main-button {
     padding: 10px 20px;
     border: none;
     background: var(--primary-color);
@@ -175,6 +174,30 @@ button:hover {
     margin-left: 20px;
 } */
 
+/* email input */
+
+.newsletter-label{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%; /* Full width on small screens */
+    max-width: 400px; /* Limits size on larger screens */
+}
+
+
+input[type="email"] {
+    border: none;
+    min-width: 300px;
+    min-height: 40px;
+    padding: 0 16px;
+    flex: 1; /* Takes up remaining space */
+    font-size: 14px;
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+}
+
+
+
 /* Picture Styling */
 picture {
     flex: 1 1 300px; /* Adjusts with screen size */
@@ -195,14 +218,23 @@ picture img {
 }
 
 .newsletter-button {
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
-    padding-top: 10px;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    /* padding-top: 10px; */
+    /* position: absolute; */
+    right: 0;
+    padding: 0 16px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right */
 }
 
 .newsletter-button:hover {
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 
 /* Reviews Section */
@@ -221,7 +253,7 @@ picture img {
 .review {
     background: var(--background-color);
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.933);
     padding: 20px;
     margin: 10px;
     width: 30%;
@@ -241,10 +273,6 @@ picture img {
     grid-template-rows: 1fr;
 }
 
-/* .footer-content,
-.contact-info {
-    width: 30%;
-} */
 
 .footer ul {
     list-style: none;
@@ -288,33 +316,22 @@ picture img {
 }
 
 
-/* nav {
-    background-color: var(--nav-bacground-color);
-    font-size: 1.2rem;
-    display: flex;
-}
-
-nav a {
-    display: block;
-    color: var(--accent1-color);
-    text-decoration: underline;
-    padding: 1rem;
-}
-
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-}
-
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-} */
-
 
 /* Activity flex Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 600px) {
     .activities-content, .activities-list {
       flex: 100%;
+    }
+
+    .newsletter-label {
+        flex-direction: column; /* Stack input and button */
+        gap: 10px; /* Spacing between input and button */
+    }
+
+    input[type="email"],
+    .newsletter-button {
+        width: 200px; /* Full width */
+        border-radius: 5px; /* Fully rounded corners */
     }
 }
 
@@ -378,4 +395,6 @@ nav a:hover {
     .newsletter p {
         font-size: 0.9em;
     }
+
+   
 }

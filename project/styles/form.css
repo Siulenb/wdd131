@@ -1,0 +1,219 @@
+/* css Variable */
+:root {
+    --primary-color: #006970;
+    --secondary-color: #0056b3;
+    --third-color: #343a40;
+    --background-color: #f2f6f8;
+    --accent1-color: white;
+    --accent2-color: #29335C;
+    --font-family: "Hind", sans-serif;
+    --paragraph-font: "serif";
+    --light-font-weight: 300;
+    --regular-font-weight: 400;
+    --medium-font-weight: 500;
+    --semibold-font-weight: 600;
+    --bold-font-weight: 700; 
+}
+
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: var(--accent2-color);
+}
+  
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Review.html header */
+.review-header{
+    color: var(--primary-color);
+}
+
+.main-button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--primary-color);
+    color: var(--accent1-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: larger;
+    margin-top: 20px;
+}
+
+.link-review {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: var(--secondary-color);
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+label, legend {
+    font-weight: bold;
+    margin-bottom: 1px;
+    
+}
+  
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+/* rating stars */
+.ratingstars {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+}
+
+/* hide the inputs */
+.ratingstars input {
+    display: none;
+}
+  
+/* set properties of all labels */
+.ratingstars > label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+}
+
+/* give label a hover state */
+.ratingstars label:hover {
+    color: var(--secondary-color);
+    transition: 0.2s ease;
+}
+
+.ratingstars label:active::before {
+    transform:scale(1.1);
+}
+  
+/* set shape of unselected label */
+.ratingstars label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+}
+  
+/* set full star shape for checked label and those that come after it */
+.ratingstars input:checked ~ label:before {
+    content:'\2605';
+}
+
+.stars-text {
+    margin: 0;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    max-width: 565px;
+}
+  
+/* Visited Date */
+#reviewDate {
+    width: 580px;
+    max-width: 600px;
+    margin: 0;
+}
+
+/* Activities */
+
+.activities label{
+    font-weight: lighter;
+
+}
+
+.activities [type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 1px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-right: 1px;
+    border-right: 1px;
+    
+}
+
+
+/* Written Review  */
+
+textarea {
+    width: 580px;
+    height: 100px;
+    max-width: 600px;
+}
+
+/* user name */
+
+.user-name {
+    width: 580px;
+    max-width: 600px;
+    margin: 0;
+}
+  
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+  
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+@-moz-document url-prefix() {
+    .ratingstars input:checked ~ label:before {
+    font-size: 36px;
+    line-height: 21px;
+    }
+}  
+  

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Review your visit - Luis Navarro Ballen</title>
+    <meta name="description" content="This is a form to review your visit">
+    <meta name="author" content="Luis Navarro Ballen">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <main>
+        <form id="reviewForm" method="get" action="review.html">
+            <h1>Review your Visit</h1>
+            <div class="beach-visited">
+                <label for="visitedBeach">Visisted Beach:</label>
+                <select id="visitedBeach" name="visitedBeach" required>
+                    <option value="" disabled selected>Select a visited beach...</option>
+                </select>
+            </div>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <div class="ratingstars">
+                    <input type="radio" id="five-star" name="stars" value="5" required><label for="five-star"></label>
+                    <input type="radio" id="four-star" name="stars" value="4" required><label for="four-star"></label>
+                    <input type="radio" id="three-star" name="stars" value="3" required><label for="three-star"></label>
+                    <input type="radio" id="two-star" name="stars" value="2" required><label for="two-star"></label>
+                    <input type="radio" id="one-star" name="stars" value="1" required><label for="one-star"></label> 
+                </div>
+                <p class="stars-text">5 being the highest rating</p>
+            </fieldset>
+
+            <!-- Review date -->
+            <div>
+                <label  for="reviewDate">Visited Date:</label>
+                <input type="date" id="reviewDate" name="reviewDate" required>
+            </div>
+
+            <!-- Activities -->
+            <fieldset class="activities">
+                <legend>Select activities done?</legend>
+                <label for="surfing"><input type="checkbox" name="surfing" value="yes" id="surfing"> Surfing</label>
+                <label for="diving"><input type="checkbox" name="diving" value="yes" id="diving"> Scuba Diving</label>
+                <label for="snorkeling"><input type="checkbox" name="snorkeling" value="yes" id="snorkeling"> Snorkeling</label>
+                <label for="water-skiing"><input type="checkbox" name="water-skiing" value="yes" id="water-skiing"> Water skiing</label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <div>
+                <label for="writtenReview">Written Review (Optional):</label>
+                <textarea id="writtenReview" name="writtenReview"></textarea>
+            </div>
+
+            <!-- User Name -->
+            <div class="user-name">
+                <label for="userName">Your Name (Optional):</label>
+                <input type="text" id="userName" name="userName">
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Luis Navarro Ballen Utah United States.
+        </p>
+    </footer>
+  <script src="scripts/form.js"></script>
+</body>
+</html>
